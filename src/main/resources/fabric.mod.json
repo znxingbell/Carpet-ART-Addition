@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "carpet-art-addition",
+	"version": "${version}",
+	"name": "Carpet ART Addition",
+	"description": "ART server's carpet mod extension",
+	"authors": [
+		"ZNXINGBELL"
+	],
+	"contact": {
+		"homepage": "https://mods.mcart.top/carpet-art-addition",
+		"sources": "https://github.com/znxingbell/carpet-ART-Addition"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/carpet-art-addition/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.znxingbell.carpetartaddition.CarpetARTAddition"
+		],
+		"fabric-datagen": [
+			"com.znxingbell.carpetartaddition.CarpetARTAdditionDataGenerator"
+		],
+		"client": [
+			"com.znxingbell.carpetartaddition.CarpetARTAdditionClient"
+		]
+	},
+	"mixins": [
+		"carpet-art-addition.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
